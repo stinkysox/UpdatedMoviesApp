@@ -1,0 +1,55 @@
+.movie-image {
+  width: 210px;
+  height: 300px;
+  opacity: 0;
+  animation: fade 0.6s ease-in forwards;
+}
+
+.movie-card {
+  width: 220px;
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.4s ease-in;
+  animation: slideIn 0.5s ease-in;
+}
+
+.movie-card:hover {
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+  scale: 0.9;
+}
+
+.view-details {
+  background-color: #cb4154;
+  border: none;
+  padding: 8px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.4s ease-in;
+}
+
+.view-details:hover {
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+  scale: 1.1;
+  cursor: pointer;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
